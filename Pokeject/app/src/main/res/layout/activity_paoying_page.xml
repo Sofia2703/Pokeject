@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context="com.example.sofia.pokeject.PaoyingPage"
+    tools:layout_editor_absoluteY="25dp"
+    tools:layout_editor_absoluteX="0dp">
+
+    <ImageButton
+        android:id="@+id/imbtnGreen"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="15dp"
+        android:onClick="greenClick"
+        app:layout_constraintBottom_toBottomOf="@+id/imbtnWater"
+        app:layout_constraintLeft_toRightOf="@+id/imbtnWater"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imbtnWater"
+        app:srcCompat="@mipmap/greenbtn"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageButton
+        android:id="@+id/imbtnFire"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="15dp"
+        android:onClick="fireClick"
+        app:layout_constraintBottom_toBottomOf="@+id/imbtnWater"
+        app:layout_constraintLeft_toLeftOf="@+id/imageView2"
+        app:layout_constraintRight_toLeftOf="@+id/imbtnWater"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        app:srcCompat="@mipmap/firebtn"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1" />
+
+    <ImageButton
+        android:id="@+id/imbtnWater"
+        android:layout_width="117dp"
+        android:layout_height="63dp"
+        android:layout_marginBottom="82dp"
+        android:onClick="waterClick"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="@+id/imageView2"
+        app:layout_constraintRight_toRightOf="@+id/imageView2"
+        app:srcCompat="@mipmap/waterbtn"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"
+        app:layout_constraintHorizontal_bias="0.502" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="WR Tish Kid"
+        android:text="Player"
+        android:textColor="@color/colorPrimary"
+        tools:layout_constraintTop_creator="1"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="33dp"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Com"
+        android:textColor="@color/colorAccent"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="33dp"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtScoreCom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:text="0"
+        android:textColor="@color/colorAccent"
+        android:textSize="70sp"
+        app:layout_constraintRight_toLeftOf="@+id/textView3"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1" />
+
+    <TextView
+        android:id="@+id/txtScoreUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:text="0"
+        android:textColor="@color/colorPrimary"
+        android:textSize="70sp"
+        app:layout_constraintLeft_toRightOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintTop_creator="1" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:srcCompat="@drawable/vsborder"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toTopOf="@+id/imbtnGreen"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="6dp"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/ballLeft"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="@+id/ballRight"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/ballRight"
+        app:layout_constraintTop_toTopOf="@+id/ballRight"
+        app:srcCompat="@drawable/pball"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1" />
+
+    <ImageView
+        android:id="@+id/ballRight"
+        android:layout_width="204dp"
+        android:layout_height="129dp"
+        android:layout_marginStart="182dp"
+        app:srcCompat="@drawable/ball"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toTopOf="@+id/btnBackPao"
+        android:layout_marginTop="149dp"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="150dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/txtScoreCom" />
+
+    <ImageButton
+        android:id="@+id/btnBackPao"
+        android:layout_width="310dp"
+        android:layout_height="53dp"
+        android:layout_marginBottom="29dp"
+        android:layout_marginEnd="21dp"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="5dp"
+        android:onClick="back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imbtnGreen"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@mipmap/backedit"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1" />
+
+    <ImageView
+        android:id="@+id/checkwinUser1"
+        android:layout_width="20dp"
+        android:layout_height="0dp"
+        app:srcCompat="@drawable/whiteback"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toBottomOf="@+id/checkwinUser2"
+        app:layout_constraintRight_toRightOf="@+id/txtScoreUser"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/txtScoreUser"
+        app:layout_constraintTop_toTopOf="@+id/checkwinUser2" />
+
+    <ImageView
+        android:id="@+id/checkwinUser2"
+        android:layout_width="20dp"
+        android:layout_height="0dp"
+        app:srcCompat="@drawable/whiteback"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        android:layout_marginStart="21dp"
+        app:layout_constraintBottom_toBottomOf="@+id/checkwinUser3"
+        android:layout_marginEnd="22dp"
+        app:layout_constraintRight_toRightOf="@+id/checkwinUser3"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/checkwinUser1"
+        app:layout_constraintTop_toTopOf="@+id/checkwinUser3" />
+
+    <ImageView
+        android:id="@+id/checkwinUser3"
+        android:layout_width="20dp"
+        android:layout_height="0dp"
+        app:srcCompat="@drawable/whiteback"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        android:layout_marginStart="13dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView2"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintTop_toTopOf="@+id/checkwinCom3"
+        app:layout_constraintLeft_toRightOf="@+id/txtScoreUser" />
+
+    <ImageView
+        android:id="@+id/checkwinCom1"
+        android:layout_width="20dp"
+        android:layout_height="0dp"
+        app:srcCompat="@drawable/whiteback"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toTopOf="@+id/txtScoreCom"
+        app:layout_constraintRight_toRightOf="@+id/txtScoreCom"
+        android:layout_marginTop="19dp"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="7dp"
+        app:layout_constraintLeft_toLeftOf="@+id/txtScoreCom"
+        app:layout_constraintTop_toTopOf="@+id/imageView2" />
+
+    <ImageView
+        android:id="@+id/checkwinCom2"
+        android:layout_width="20dp"
+        android:layout_height="0dp"
+        app:srcCompat="@drawable/whiteback"
+        app:layout_constraintRight_toLeftOf="@+id/txtScoreCom"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toBottomOf="@+id/checkwinCom1"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/txtScoreCom"
+        app:layout_constraintTop_toTopOf="@+id/checkwinCom1" />
+
+    <ImageView
+        android:id="@+id/checkwinCom3"
+        android:layout_width="20dp"
+        android:layout_height="0dp"
+        app:srcCompat="@drawable/whiteback"
+        app:layout_constraintRight_toLeftOf="@+id/checkwinCom2"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toBottomOf="@+id/checkwinCom2"
+        app:layout_constraintTop_toTopOf="@+id/checkwinCom2" />
+
+    <TextView
+        android:id="@+id/allScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="23dp"
+        app:layout_constraintBottom_toTopOf="@+id/checkwinUser3"
+        app:layout_constraintLeft_toRightOf="@+id/checkwinUser3"
+        app:layout_constraintTop_toTopOf="@+id/checkwinUser3"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintTop_creator="1" />
+
+</android.support.constraint.ConstraintLayout>
