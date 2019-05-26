@@ -13,53 +13,51 @@
         android:id="@+id/imageView16"
         android:layout_width="0dp"
         android:layout_height="86dp"
-        app:srcCompat="@drawable/tuto"
-        android:layout_marginStart="53dp"
-        tools:layout_constraintTop_creator="1"
-        tools:layout_constraintRight_creator="1"
-        android:layout_marginEnd="53dp"
-        app:layout_constraintRight_toRightOf="parent"
-        android:layout_marginTop="16dp"
-        tools:layout_constraintLeft_creator="1"
+        android:layout_marginTop="44dp"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/tuto"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1" />
 
     <ImageView
         android:id="@+id/imageView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/rule"
-        tools:layout_constraintTop_creator="1"
-        android:layout_marginTop="26dp"
-        tools:layout_constraintLeft_creator="1"
+        android:layout_marginTop="120dp"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/rule"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintTop_creator="1" />
 
     <Button
         android:id="@+id/btnBackTu"
         android:layout_width="160dp"
         android:layout_height="60dp"
-        android:layout_marginEnd="16dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginBottom="44dp"
         android:background="@drawable/backb"
         android:onClick="back"
-        tools:layout_constraintRight_creator="1"
-        tools:layout_constraintBottom_creator="1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        android:layout_marginBottom="16dp" />
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintRight_creator="1" />
 
     <Button
         android:id="@+id/btnGoTu"
         android:layout_width="0dp"
         android:layout_height="60dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="16dp"
         android:background="@drawable/gogo"
         android:onClick="gotogame"
-        app:layout_constraintRight_toLeftOf="@+id/btnBackTu"
-        tools:layout_constraintRight_creator="1"
         app:layout_constraintBaseline_toBaselineOf="@+id/btnBackTu"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/btnBackTu"
         tools:layout_constraintBaseline_creator="1"
         tools:layout_constraintLeft_creator="1"
-        app:layout_constraintLeft_toLeftOf="parent" />
+        tools:layout_constraintRight_creator="1" />
 </android.support.constraint.ConstraintLayout>

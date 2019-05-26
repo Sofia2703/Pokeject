@@ -76,21 +76,21 @@ public class paoyinghard extends AppCompatActivity {
     }
     public void windClick(View view) {
         left.setImageResource(R.drawable.pigeon);
-        String message = play_turn("green");
+        String message = play_turn("wind");
         Toast.makeText(paoyinghard.this, message, Toast.LENGTH_SHORT).show();
         player.setText(Integer.toString(HumanScore));
         com.setText(Integer.toString(ComScore));
     }
     public void powerClick(View view) {
         left.setImageResource(R.drawable.pikachu);
-        String message = play_turn("green");
+        String message = play_turn("power");
         Toast.makeText(paoyinghard.this, message, Toast.LENGTH_SHORT).show();
         player.setText(Integer.toString(HumanScore));
         com.setText(Integer.toString(ComScore));
     }
     public void earthClick(View view) {
         left.setImageResource(R.drawable.iwark);
-        String message = play_turn("green");
+        String message = play_turn("earth");
         Toast.makeText(paoyinghard.this, message, Toast.LENGTH_SHORT).show();
         player.setText(Integer.toString(HumanScore));
         com.setText(Integer.toString(ComScore));
